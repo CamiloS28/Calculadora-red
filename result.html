@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style-result.css">
+    <title>Resultado de la Calculadora de IP</title>
+    <style>
+        .red { background-color: #ff4c4c; color: white; padding: 2px 4px; }
+        .host { background-color: #4caf50; color: white; padding: 2px 4px; }
+    </style>
+</head>
+<body>
+    <h1>Resultados del Cálculo de IP</h1>
+    <p><strong>IP de red:</strong> {{ net_ip }}</p>
+    <p><strong>IP de Broadcast:</strong> {{ broadcast_ip }}</p>
+    <p><strong>Cantidad de hosts útiles:</strong> {{ num_hosts }}</p>
+    <p><strong>Rango de IP útiles:</strong> {{ host_range }}</p>
+    <p><strong>Clase de IP:</strong> {{ ip_class }}</p>
+    <p><strong>IP privada o pública:</strong> {{ ip_type }}</p>
+
+    <h2>BINARIO</h2>
+    <div>
+        <span class="red">{{ porcion_red }}</span><span class="host">{{ porcion_host }}</span>
+    </div>
+
+    <a href="/" class="back-button">Volver a calcular</a>
+</body>
+</html>

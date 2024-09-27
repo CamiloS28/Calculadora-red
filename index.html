@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Calculadora de IP</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de IP</h1>
+        <form action="/calculate" method="post">
+            <label for="ip">Dirección IP:</label>
+            <input type="text" id="ip" name="ip" required>
+            
+            <label for="mask">Máscara de red:</label>
+            <input type="text" id="mask" name="mask" required>
+            
+            <button type="submit">Calcular</button>
+        </form>
+    </div>
+</body>
+</html>
